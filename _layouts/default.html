@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+<link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | relative_url }}">
+</head>
+<body>
+<header class="site-head">
+  <a class="brand" href="{{ '/' | relative_url }}">jotuber<i>.</i></a>
+  <nav>
+    <a href="{{ '/' | relative_url }}">실험</a>
+    <a href="{{ '/rules/' | relative_url }}">지침 파일</a>
+    <a href="{{ '/about/' | relative_url }}">소개</a>
+    <a href="{{ '/log/' | relative_url }}">정정 기록</a>
+    <a class="cta" href="{{ site.instagram_url }}" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+<main class="wrap">
+{{ content }}
+</main>
+<footer class="site-foot">
+  <p class="disclosure">이 사이트의 글 초안과 도식은 Claude의 보조를 받아 만듭니다. 수치는 실제로 실행해 나온 값만 쓰고, 확인되지 않은 값은 <code>[값 검증 필요]</code>로 남깁니다. 오류 제보는 48시간 내 확인하고 <a href="{{ '/log/' | relative_url }}">정정 기록</a>에 공개합니다.</p>
+  <p class="fine">© {{ site.time | date: "%Y" }} jotuber · 사례는 특정 회사·프로젝트와 무관한 일반화된 구성입니다.</p>
+</footer>
+</body>
+</html>

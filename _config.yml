@@ -1,0 +1,21 @@
+title: "jotuber"
+tagline: "AI로 일을 자동화하는 실험 기록 — 만들고, 돌리고, 숫자로 보고합니다"
+author: "jotuber"
+email: ""
+url: "https://jotuberrr-ctr.github.io"
+baseurl: ""
+lang: ko
+instagram_url: "https://www.instagram.com/jotuberrr/"
+stibee_form_url: ""
+permalink: /:year/:month/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
+timezone: Asia/Seoul
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post", verified: false }
+exclude: [README.md, drafts, Gemfile, Gemfile.lock, vendor]
+plugins: [jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
